@@ -303,13 +303,10 @@ Run `python -m gwfm figures` to rebuild the quantitative figures and verify thei
 | Figure 5 | [Figure5_ablation.png](figures/Figure5_ablation.png) | Three ablations and the first three regional PCs of both GWFM branches; regenerated from saved predictions and the seed-11 checkpoint |
 | Table 1 | [Table1_performance.png](figures/Table1_performance.png) | All 176 printed R² values for full embeddings, modality blocks, and spatial baselines |
 
-The Figure 2 maps and scatter locations are schematic, as stated in its caption. Figure 3 is supplied artwork. These two files are copied without image regeneration, including when using a separate `--work-dir`; their hashes must match the final manuscript. Figures 1, 4, and 5 and Table 1 are numerical plots, rebuilt from data and checked at the manuscript's displayed precision. The Figure 1 artificial mask is illustrative and never selects downstream samples.
-
-The `natural_graph_partition0.npz`, `natural_graph_partition1.npz`, and `natural_graph_partition2.npz` files under the main-model checkpoints record the final training, validation, and test graphs, respectively. They contain node IDs, visible-neighbor edges, hierarchy edges, and weights. They are reproducibility records for the reported models. Candidate MLP files belong to the reported six-setting validation search; the selected head and all tuning scores are recorded in each `*_selection.json`.
 
 ## Reproduction verification record
 
-The original final run supplied with this package regenerated data from an empty directory, trained all 15 encoders for 300 epochs each, selected 165 downstream MLPs from 990 candidate fits, and completed the spatial baselines and figures. All methods used the full set of observed interpolation samples. Compared item by item with the previous run using the same all-observed-sample protocol, encoder parameters, the existing regional embeddings, and all 504 R² metrics were identical. Original full-training logs are in `audit/original_run/`; cleanup validation is recorded separately in `audit/cleanup_validation.json`.
+The original final run supplied with this package regenerated data from an empty directory, trained all 15 encoders for 300 epochs each, selected 165 downstream MLPs from 990 candidate fits, and completed the spatial baselines and figures. All methods used the full set of observed interpolation samples. Compared item by item with the previous run using the same all-observed-sample protocol, encoder parameters, the existing regional embeddings, and all 504 R² metrics were identical. 
 
 ### Health inference comparison
 
@@ -351,7 +348,7 @@ The table below averages R² across the 12 attributes. Neural methods use the fu
 
 The current and previous runs using the all-observed-sample protocol match elementwise or metric by metric in their encoder parameters, embeddings, and all R² values, with a maximum absolute difference of 0. The nonzero differences in the tables instead compare the current run with the original results.
 
-## Cleanup validation
+## Validation
 
 The cleaned package passed 29 unit tests and the complete `python -m gwfm all` entry point using the supplied encoder and MLP caches. A separate fresh generation reproduced every array in all eight data archives. The 15 encoder checkpoint files remain byte-for-byte unchanged; 165 selected MLPs were replayed, and all 504 R² entries match the supplied final run exactly. The smoke run trained GWFM and PDFM for two epochs and prediction heads for three epochs; the tests also checked gradients for all three ablations.
 
@@ -359,6 +356,6 @@ The final figure audit checks all 176 Table 1 cells, 64 ablation cells, 20 map s
 
 ## AI use disclosure
 
-OpenAI Codex and ChatGPT assisted with synthetic data generation, model implementation, training and evaluation scripts, figure generation, report editing, code refactoring, and consistency checks. AI image tools also assisted with text and image layout; Figure 2 is schematic. Numerical tables, prediction-error maps, and statistics in the report were computed from saved data and predictions.
+OpenAI Codex and ChatGPT assisted with synthetic data generation, model implementation, training and evaluation scripts, figure generation, report editing, code refactoring, and consistency checks. AI image tools also assisted with text and image layout; Figure 2a is schematic. Numerical tables, prediction-error maps, and statistics in the report were computed from saved data and predictions.
 
 The main workflow supplied task requirements, method equations, existing code, and run outputs, then asked Codex to check equations against the implementation, trace the provenance of weights and predictions, verify missingness masks and data splits, and redraw figures from saved results. Consistency was checked by recomputing outputs and running regression checks on computed statistics. I reviewed and revised the AI-generated content and automated checks and take responsibility for the correctness, interpretation, and reproducibility of the final submission.
