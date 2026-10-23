@@ -325,7 +325,7 @@ def train_pdfm(seed, epochs=300):
 
 @torch.no_grad()
 def extract_embeddings(model, seed):
-    """The checkpoint's historical absolute path is provenance only; use local DATA."""
+    """Export embeddings from the saved encoder using the selected work directory."""
     from .ablation.run import encoder_folder
     from .ablation.model import make_encoder
 

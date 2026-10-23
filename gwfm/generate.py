@@ -88,12 +88,7 @@ def run():
     # Never overwrite a dataset that already has trained results attached to it.
     if (DATA / "metadata.json").exists():
         saved = json.loads((DATA / "metadata.json").read_text())["config"]
-        # Older metadata also recorded training options and unused missingness scenarios.
-        if any(
-            saved.get(key) != value
-            for key, value in config.items()
-            if key != "scenarios"
-        ) or not set(config["scenarios"]).issubset(saved.get("scenarios", [])):
+        if saved != config:
             raise ValueError(
                 "Saved data use a different configuration; use a new --work-dir"
             )

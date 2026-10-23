@@ -37,8 +37,7 @@ class ArtifactGuardsTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "inputs changed"):
                     ablation.train("no_weighting", 11)
 
-    def test_data_illustration_needs_no_old_evaluation_masks(self):
-        self.assertFalse((figure_data.DATA / "evaluation_masks.npz").exists())
+    def test_data_illustration_uses_reported_masks_and_test_split(self):
         with tempfile.TemporaryDirectory() as directory, patch.object(
             figure_data, "OUT", Path(directory)
         ):

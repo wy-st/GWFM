@@ -1710,8 +1710,8 @@
     "results/figure_probes/runs/GWFM_Modal-2_seed37/Heat-related burden_h64_wd0.0001.pt": "b32991934ecbfd2bc9d2bd0d7719894e8c97739c0ff0bf8778a88397d0edb347"
   },
   "manuscript_source": {
-    "name": "GWFM_last.docx",
-    "sha256": "7b109d3a664000c5285181e6ffddaaf1de76ca587091c662ba7f82e50c116f7e"
+    "name": "GWFM_report.pdf",
+    "sha256": "2a19c57c6cfa9afc7c4544cb9589e02bddcebd310973257123a7c52c40f4208b"
   },
   "output_sha256": {
     "Figure1_data.png": "92336c844bdb133afd1229af43e25290efc405dcd84c25d9d40c27c4d8b54283",

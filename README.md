@@ -2,7 +2,7 @@
 
 This repository implements a small-scale geographically weighted foundation model. The main model, GWFM, combines dual-branch encoding, explicit modality fusion, and prototype-assisted self-supervised learning. Downstream prediction uses a two-layer MLP trained on frozen regional embeddings. The implementation retains the report’s main baseline, the Population Dynamics Foundation Model (PDFM), the KNN, IDW, and GPR baselines, three ablation experiments, and result visualizations.
 
-The code follows the experimental setup in the GWFM report. Attribute interpolation includes every region with an observed target modality within each split. The `data/`, `checkpoints/`, and `results/` directories contain the supplied final run, originally generated, trained, and evaluated from an empty directory. This cleaned package reuses those numerical artifacts and regenerates the report figures; it does not claim a new full training run. Comparisons with the original results are provided below.
+The code follows the experimental setup in the GWFM report. Attribute interpolation includes every region with an observed target modality within each split. The `data/`, `checkpoints/`, and `results/` directories contain the final dataset, trained models, and predictions used in the report. The supplied results can be verified and plotted directly, or reproduced by running the full pipeline in a new directory.
 
 This reproduction used an Apple M4 Max with 128 GB of memory, macOS 26.6.2 (ARM64), and an existing dedicated Conda environment named GWFM: Python 3.12.2, CPU execution with 2 compute threads, PyTorch 2.6.0, and PyTorch Geometric 2.6.1.
 
@@ -25,7 +25,7 @@ data/                 Supplied final synthetic dataset
 checkpoints/          Fifteen trained encoders and exported embeddings
 results/              Selected prediction heads, tuning records, and predictions
 figures/              One final image per manuscript figure/table, plus source_data/
-audit/                Cleanup checks and original training records
+report/               Reference values and artwork hashes for the current PDF report
 ```
 
 Read the core code in this order:
@@ -194,7 +194,7 @@ This section describes the synthetic data files, fields, and supervision boundar
 | missingness.npz | Urbanicity and specified missingness probabilities, for generator diagnostics only |
 | population.npz | Synthetic population mass, area, density, and urbanicity |
 | regions.geojson / subregions.geojson | Synthetic polygons and node IDs for mapping |
-| metadata.json | Original generator configuration, random seeds, and data description |
+| metadata.json | Generator configuration, random seeds, and data description |
 | ../configs/interpolation_cohorts.json | Fixed interpolation IDs covering all observed regions in each split, together with visibility, hierarchy, and split hashes; checked for omitted, duplicate, or extra IDs |
 | standardizer.npz | Per-scale, per-attribute means and standard deviations in original units, computed only from training observations; used for baseline fallback and NRMSE |
 
@@ -285,68 +285,63 @@ This is a controlled, simplified simulation. It does not fit the empirical distr
 | figures/ | Exactly six final images: Figures 1–5 and Table 1, numbered as in the report |
 | figures/source_data/ | Plotted values, PCA arrays, manuscript comparisons, and source/output hashes |
 | gwfm/visualization/ | Data, performance, ablation, and PCA plotting helpers; `palette.py` contains shared figure colors and table labels |
-| report/figure_reference.json | Final manuscript artwork hashes and independently transcribed printed values |
-| audit/ | Cleanup verification and original full-training records in `original_run/` |
+| report/figure_reference.json | Printed values and artwork hashes checked against GWFM_report.pdf; used for figure verification only |
 
-The directory is organized around the report’s experiments and retains the original model architecture and all research components reported in the paper.
+The directory contains the model architecture, experiments, and research components reported in the paper.
 
 ### Final manuscript figures
 
-Run `python -m gwfm figures` to rebuild the quantitative figures and verify their values against the final manuscript. The export keeps one image for each figure or table. Component panels are composed in a temporary directory and are not retained as duplicate figures. There is no separate `performance`, `current_version`, or preview directory.
+Run `python -m gwfm figures` to rebuild the quantitative figures and verify their values against the final manuscript. The export keeps one image for each figure or table. Component panels are composed in a temporary directory and are not retained as duplicate figures.
 
 | Manuscript item | Final file | Content and source |
 | --- | --- | --- |
 | Figure 1 | [Figure1_data.png](figures/Figure1_data.png) | Three modality maps, all 12 attribute names, urbanicity sampling, mask counts, and both health-target maps; regenerated from the final dataset |
-| Figure 2 | [Figure2_heterogeneity.jpg](figures/Figure2_heterogeneity.jpg) | Exact schematic artwork extracted from the final Word manuscript; its reported correlations and Moran statistics are checked against the data |
-| Figure 3 | [Figure3_framework.jpeg](figures/Figure3_framework.jpeg) | Exact framework artwork extracted from the final Word manuscript |
+| Figure 2 | [Figure2_heterogeneity.jpg](figures/Figure2_heterogeneity.jpg) | Schematic artwork used in the final PDF report; its reported correlations and Moran statistics are checked against the data |
+| Figure 3 | [Figure3_framework.jpeg](figures/Figure3_framework.jpeg) | Framework artwork used in the final PDF report |
 | Figure 4 | [Figure4_performance.png](figures/Figure4_performance.png) | Inference and interpolation results; panel c is heat-related burden, and panel f is temperature; regenerated from saved predictions |
 | Figure 5 | [Figure5_ablation.png](figures/Figure5_ablation.png) | Three ablations and the first three regional PCs of both GWFM branches; regenerated from saved predictions and the seed-11 checkpoint |
 | Table 1 | [Table1_performance.png](figures/Table1_performance.png) | All 176 printed R² values for full embeddings, modality blocks, and spatial baselines |
 
 
-## Reproduction verification record
+## Results
 
-The original final run supplied with this package regenerated data from an empty directory, trained all 15 encoders for 300 epochs each, selected 165 downstream MLPs from 990 candidate fits, and completed the spatial baselines and figures. All methods used the full set of observed interpolation samples. Compared item by item with the previous run using the same all-observed-sample protocol, encoder parameters, the existing regional embeddings, and all 504 R² metrics were identical. 
+These results use the reported experimental settings and all observed interpolation targets. Neural results are means over seeds 11, 23, and 37; spatial baselines use fixed runs. R² values are rounded to three decimal places, as in the report.
 
-### Health inference comparison
+### Health inference
 
-The reference values are the originally supplied results, which used 521 regions for climate interpolation. The current run uses all 523 observed climate regions. Health-task samples are unchanged. Neural results are means over seeds 11, 23, and 37; spatial baselines use fixed runs. Differences are defined as Δ = current run − reference. Values are shown to nine decimal places; a displayed zero may still conceal a smaller floating-point difference.
+| Method | Target | R² |
+| --- | --- | --- |
+| GWFM | Respiratory burden | 0.834 |
+| GWFM | Heat-related burden | 0.456 |
+| PDFM | Respiratory burden | 0.798 |
+| PDFM | Heat-related burden | 0.304 |
+| KNN | Respiratory burden | 0.534 |
+| KNN | Heat-related burden | 0.240 |
+| IDW | Respiratory burden | 0.545 |
+| IDW | Heat-related burden | 0.274 |
+| GPR | Respiratory burden | 0.564 |
+| GPR | Heat-related burden | 0.271 |
+| No geographic weighting | Respiratory burden | 0.815 |
+| No geographic weighting | Heat-related burden | 0.447 |
+| No modality awareness | Respiratory burden | 0.801 |
+| No modality awareness | Heat-related burden | 0.451 |
+| No prototype regularization | Respiratory burden | 0.829 |
+| No prototype regularization | Heat-related burden | 0.439 |
 
-| Method | Target | Reference R² | Current run R² | ΔR² |
-| --- | --- | --- | --- | --- |
-| GWFM | Respiratory burden | 0.833738219 | 0.833892752 | +0.000154533 |
-| GWFM | Heat-related burden | 0.455628649 | 0.455520608 | -0.000108041 |
-| PDFM | Respiratory burden | 0.797892613 | 0.797892613 | 0.000000000 |
-| PDFM | Heat-related burden | 0.304129146 | 0.304129146 | 0.000000000 |
-| KNN | Respiratory burden | 0.534164412 | 0.534164412 | 0.000000000 |
-| KNN | Heat-related burden | 0.240270078 | 0.240270078 | 0.000000000 |
-| IDW | Respiratory burden | 0.544952602 | 0.544952602 | 0.000000000 |
-| IDW | Heat-related burden | 0.273857256 | 0.273857256 | 0.000000000 |
-| GPR | Respiratory burden | 0.564446766 | 0.564446766 | 0.000000000 |
-| GPR | Heat-related burden | 0.271082045 | 0.271082045 | 0.000000000 |
-| No geographic weighting | Respiratory burden | 0.815182306 | 0.815182647 | +0.000000342 |
-| No geographic weighting | Heat-related burden | 0.446952507 | 0.446840257 | -0.000112250 |
-| No modality awareness | Respiratory burden | 0.801398017 | 0.801442560 | +0.000044543 |
-| No modality awareness | Heat-related burden | 0.450424038 | 0.450815419 | +0.000391380 |
-| No prototype regularization | Respiratory burden | 0.829094092 | 0.829098276 | +0.000004183 |
-| No prototype regularization | Heat-related burden | 0.436515879 | 0.438788343 | +0.002272464 |
+### Mean attribute interpolation
 
-### Mean attribute interpolation comparison
+R² is averaged equally across the 12 attributes. Neural methods use the full 48-dimensional embedding.
 
-The table below averages R² across the 12 attributes. Neural methods use the full 48-dimensional embedding and are averaged over three seeds.
-
-| Method | Target | Reference R² | Current run R² | ΔR² |
-| --- | --- | --- | --- | --- |
-| GWFM | Attribute interpolation | 0.907482409 | 0.907722772 | +0.000240363 |
-| PDFM | Attribute interpolation | 0.719308392 | 0.719361571 | +0.000053179 |
-| KNN | Attribute interpolation | 0.339018500 | 0.339072930 | +0.000054430 |
-| IDW | Attribute interpolation | 0.360849261 | 0.360809461 | -0.000039800 |
-| GPR | Attribute interpolation | 0.387572543 | 0.387501348 | -0.000071195 |
-| No geographic weighting | Attribute interpolation | 0.889685981 | 0.889658475 | -0.000027505 |
-| No modality awareness | Attribute interpolation | 0.880145074 | 0.880168198 | +0.000023124 |
-| No prototype regularization | Attribute interpolation | 0.898625336 | 0.898720279 | +0.000094943 |
-
-The current and previous runs using the all-observed-sample protocol match elementwise or metric by metric in their encoder parameters, embeddings, and all R² values, with a maximum absolute difference of 0. The nonzero differences in the tables instead compare the current run with the original results.
+| Method | Mean R² |
+| --- | --- |
+| GWFM | 0.908 |
+| PDFM | 0.719 |
+| KNN | 0.339 |
+| IDW | 0.361 |
+| GPR | 0.388 |
+| No geographic weighting | 0.890 |
+| No modality awareness | 0.880 |
+| No prototype regularization | 0.899 |
 
 ## AI use disclosure
 

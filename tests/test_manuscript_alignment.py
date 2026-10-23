@@ -41,6 +41,8 @@ class ManuscriptAlignmentTests(unittest.TestCase):
         reference = json.loads(
             (REPOSITORY / "report/figure_reference.json").read_text()
         )
+        report = reference["manuscript_source"]
+        self.assertEqual(digest(REPOSITORY / report["name"]), report["sha256"])
         for name, metadata in reference["static_artwork"].items():
             self.assertEqual(digest(FIGURES / name), metadata["sha256"])
         for name in actual:

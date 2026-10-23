@@ -170,16 +170,23 @@ class ComplianceTests(unittest.TestCase):
                 protocol.dataset()
 
     def test_stale_config_rejected_without_overwriting_data(self):
-        with tempfile.TemporaryDirectory() as directory:
-            dest = Path(directory)
-            metadata = json.loads((DATA / "metadata.json").read_text())
-            metadata["config"]["split_seed"] += 1
-            (dest / "metadata.json").write_text(json.dumps(metadata))
-            with patch.object(generate, "DATA", dest), self.assertRaisesRegex(
-                ValueError, "different configuration"
-            ):
-                generate.run()
-            self.assertEqual(list(dest.iterdir()), [dest / "metadata.json"])
+        for key, value in (
+            ("split_seed", -1),
+            ("scenarios", ["complementary", "extra_scenario"]),
+            ("epochs", 300),
+        ):
+            with self.subTest(key=key), tempfile.TemporaryDirectory() as directory:
+                dest = Path(directory)
+                metadata = json.loads((DATA / "metadata.json").read_text())
+                metadata["config"][key] = value
+                original = json.dumps(metadata)
+                (dest / "metadata.json").write_text(original)
+                with patch.object(generate, "DATA", dest), self.assertRaisesRegex(
+                    ValueError, "different configuration"
+                ):
+                    generate.run()
+                self.assertEqual(list(dest.iterdir()), [dest / "metadata.json"])
+                self.assertEqual((dest / "metadata.json").read_text(), original)
 
     def test_checkpoint_input_mutation_rejected(self):
         folder = REPOSITORY / "checkpoints/GWFM/seed11"
