@@ -218,7 +218,7 @@ On a 200 km × 200 km plane, settlement density d(s) combines a background of 0.
 Let normalized coordinates be s=(x,y)∈[0,1]². Each field uses the same 97×97 kernel centers over [−0.35,1.35]², giving 9,409 Gaussian kernels. Independent standard-normal coefficients weight the kernels. Kernel weights are L2-normalized at each location so that the theoretical pointwise variance is 1. The seed determines the positions and number of field peaks and troughs; they are not prescribed.
 
 $$
-g(s)=\operatorname{sigmoid}[(x-0.50-0.17\sin(2\pi y+\phi ))/0.10],   \phi \sim \operatorname{Uniform}(-\pi ,\pi )
+g(s)=\mathrm{sigmoid}[(x-0.50-0.17\sin(2\pi y+\phi ))/0.10],   \phi \sim \mathrm{Uniform}(-\pi ,\pi )
 $$
 
 The three base fields F₁, F₂, and F₃ have bandwidths (0.128,0.064,0.192)×[0.65+0.70g(s)]. The positive multiplier ranges from 0.65–1.35, producing smoother fields where g is larger. Independent background fields C, I, and U each have bandwidth 0.176 and represent shared background, service-related attributes, and health targets, respectively.
@@ -237,13 +237,13 @@ The initial link-scale values η are defined in the table below. Attribute-speci
 | --- | --- | --- | --- |
 | Climate | Temperature (°C) | $L_{c}+0.12u$ | $18+4\eta ^{*}$ |
 | Climate | Relative humidity | $0.5-0.35L_{c}+0.70C$ | $\sigma (\eta ^{*})$ |
-| Climate | Annual precipitation (mm) | $6.6-0.15L_{c}+0.35C$ | $\operatorname{exp}(\eta ^{*})$ |
+| Climate | Annual precipitation (mm) | $6.6-0.15L_{c}+0.35C$ | $\exp(\eta ^{*})$ |
 | Climate | Hot-day proportion | $-3+0.70L_{c}+0.15u$ | $\sigma (\eta ^{*})$ |
-| Pollution | PM₂.₅ (µg/m³) | $2.4+0.40L_{p}+0.15u$ | $\operatorname{exp}(\eta ^{*})$ |
-| Pollution | NO₂ (µg/m³) | $2.6+0.45L_{p}+0.30u$ | $\operatorname{exp}(\eta ^{*})$ |
-| Pollution | Ozone (µg/m³) | $3.5+0.25L_{c}-0.20L_{p}+0.20C$ | $\operatorname{exp}(\eta ^{*})$ |
-| Pollution | Emissions index | $0.50L_{p}+0.20u$ | $\operatorname{exp}(\eta ^{*})$ |
-| Sociodemographic | Population density (people/km²) | $\operatorname{log} \rho $ | $\rho =N/A$ |
+| Pollution | PM₂.₅ (µg/m³) | $2.4+0.40L_{p}+0.15u$ | $\exp(\eta ^{*})$ |
+| Pollution | NO₂ (µg/m³) | $2.6+0.45L_{p}+0.30u$ | $\exp(\eta ^{*})$ |
+| Pollution | Ozone (µg/m³) | $3.5+0.25L_{c}-0.20L_{p}+0.20C$ | $\exp(\eta ^{*})$ |
+| Pollution | Emissions index | $0.50L_{p}+0.20u$ | $\exp(\eta ^{*})$ |
+| Sociodemographic | Population density (people/km²) | $\log \rho $ | $\rho =N/A$ |
 | Sociodemographic | Deprivation index | $-0.4+0.75L_{s}+0.10C$ | $\sigma (\eta ^{*})$ |
 | Sociodemographic | Older-adult proportion | $-0.7+0.45L_{s}-0.12u+0.25I$ | $0.05+0.40\sigma (\eta ^{*})$ |
 | Sociodemographic | Healthcare accessibility | $0.5-0.50L_{s}+0.60u+0.25I$ | $\sigma (\eta ^{*})$ |
