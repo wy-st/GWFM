@@ -44,7 +44,7 @@ Read the core code in this order:
 | `gwfm/fit_mlp.py` | Validation-only MLP selection and cache validation |
 | `build_figures.py` | The single export entry point for Figures 1–5 and Table 1 |
 
-The model modules are building blocks of the same final architecture, not separate experimental candidates. Their parameter names are retained so the supplied checkpoints load exactly. Health-target labels and filenames are English throughout this package.
+The model modules are building blocks of the same final architecture, not separate experimental candidates. Their parameter names are retained so the supplied checkpoints load exactly.
 
 ## Environment setup
 
@@ -358,8 +358,6 @@ The cleaned package passed 29 unit tests and the complete `python -m gwfm all` e
 The final figure audit checks all 176 Table 1 cells, 64 ablation cells, 20 map statistics, six PCA panels, and the four relative changes quoted in the Results section. All match the final manuscript at its printed precision.
 
 ## AI use disclosure
-
-This cleanup also used OpenAI Codex to remove unused experiment branches, convert the final Word README to Markdown (including equations), add English explanations, translate artifact labels, and check saved results.
 
 OpenAI Codex and ChatGPT assisted with synthetic data generation, model implementation, training and evaluation scripts, figure generation, report editing, code refactoring, and consistency checks. AI image tools also assisted with text and image layout; Figure 2 is schematic. Numerical tables, prediction-error maps, and statistics in the report were computed from saved data and predictions.
 
