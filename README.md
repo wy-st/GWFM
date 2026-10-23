@@ -348,12 +348,6 @@ The table below averages R² across the 12 attributes. Neural methods use the fu
 
 The current and previous runs using the all-observed-sample protocol match elementwise or metric by metric in their encoder parameters, embeddings, and all R² values, with a maximum absolute difference of 0. The nonzero differences in the tables instead compare the current run with the original results.
 
-## Validation
-
-The cleaned package passed 29 unit tests and the complete `python -m gwfm all` entry point using the supplied encoder and MLP caches. A separate fresh generation reproduced every array in all eight data archives. The 15 encoder checkpoint files remain byte-for-byte unchanged; 165 selected MLPs were replayed, and all 504 R² entries match the supplied final run exactly. The smoke run trained GWFM and PDFM for two epochs and prediction heads for three epochs; the tests also checked gradients for all three ablations.
-
-The final figure audit checks all 176 Table 1 cells, 64 ablation cells, 20 map statistics, six PCA panels, and the four relative changes quoted in the Results section. All match the final manuscript at its printed precision.
-
 ## AI use disclosure
 
 OpenAI Codex and ChatGPT assisted with synthetic data generation, model implementation, training and evaluation scripts, figure generation, report editing, code refactoring, and consistency checks. AI image tools also assisted with text and image layout; Figure 2a is schematic. Numerical tables, prediction-error maps, and statistics in the report were computed from saved data and predictions.
