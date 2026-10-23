@@ -10,7 +10,7 @@ This work gratefully acknowledges the research ideas introduced by PDFM.
 
 ## Repository guide
 
-This submission contains only the experiments described in the final report and this README: GWFM, PDFM, KNN/IDW/GPR, three GWFM component ablations, 16D modality-block comparisons, and the associated figures. The PDF report is [report/GWFM_report.pdf](report/GWFM_report.pdf).
+This submission contains only the experiments described in the final report and this README: GWFM, PDFM, KNN/IDW/GPR, three GWFM component ablations, 16D modality-block comparisons, and the associated figures. The PDF report is [GWFM_report.pdf](GWFM_report.pdf).
 
 ```text
 gwfm/                 Data generation, encoders, training, and evaluation
