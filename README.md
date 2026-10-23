@@ -25,7 +25,6 @@ data/                 Supplied final synthetic dataset
 checkpoints/          Fifteen trained encoders and exported embeddings
 results/              Selected prediction heads, tuning records, and predictions
 figures/              One final image per manuscript figure/table, plus source_data/
-report/               Final PDF and the figure/value reference used for verification
 audit/                Cleanup checks and original training records
 ```
 
