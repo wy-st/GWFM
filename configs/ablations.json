@@ -1,0 +1,57 @@
+{
+  "variants": [
+    "no_weighting",
+    "no_modality",
+    "no_prototype",
+    "full"
+  ],
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "split_seed": 1729,
+  "region_counts": [
+    420,
+    60,
+    120
+  ],
+  "embedding_dim": 48,
+  "decoder_seed": 11,
+  "grid": [
+    {
+      "hidden": 32,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden": 32,
+      "weight_decay": 0.01
+    },
+    {
+      "hidden": 64,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden": 64,
+      "weight_decay": 0.01
+    },
+    {
+      "hidden": 128,
+      "weight_decay": 0.0001
+    },
+    {
+      "hidden": 128,
+      "weight_decay": 0.01
+    }
+  ],
+  "max_decoder_epochs": 500,
+  "decoder_patience": 40,
+  "encoder_epochs": 300,
+  "no_weighting": "z=h_k instead of beta*h_k. Spatial distance weighting and modality fusion retained. Beta branch still receives original auxiliary losses, but is disconnected from downstream z.",
+  "no_modality": "Replace the entire modality-specific stems plus shared fusion module in BOTH branches with the pre-existing mixed-input VisibleGraphEncoder. Spatial mean/max/sum, distance bandwidths, beta multiplication and prototypes retained. Not just removal of the shared residual.",
+  "no_prototype": "Remove EMA teacher, prototypes, prototype consistency AND its variance regularizer; retain both branches and beta multiplication. Joint auxiliary-module ablation, not separate attribution to the two losses.",
+  "full": "Use the same three selected GWFM checkpoints and independently selected full 48D downstream MLPs under the complete observed-region cohorts.",
+  "training": "Same two mixed observation-only modality masks, train-only normalization, Adam0.001, cosine300, clip5, checkpoint by fixed validation Huber.",
+  "evaluation": "Regional target-excluded interpolation using every naturally observed region in each split, plus two health-burden inference targets. No additional random downstream views. Freeze outputs before test scoring; retain the original three ablation definitions.",
+  "uncertainty": "Mean and sample SD over three encoder seeds; fixed geography and decoder seed. Not significance or geographic replication."
+}

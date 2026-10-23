@@ -1,0 +1,265 @@
+{
+  "aggregation": "Area-weighted climate/pollution; population-weighted social indices; density = total population / total area; independent measurement noise after aggregation",
+  "autocorrelation": "Per-attribute row-standardized rook Moran I on complete measurements; parameters frozen on unlabeled pilot seeds",
+  "config": {
+    "atoms_per_subregion": 3,
+    "attribute_model": "attribute_moran_v2",
+    "attribute_variation": [
+      [
+        0.7821001415920322,
+        0.2245655600316897
+      ],
+      [
+        0.8277670195643546,
+        0.3368949281885717
+      ],
+      [
+        1.160991336300807,
+        0.5152339412251281
+      ],
+      [
+        0.8263015834382595,
+        0.398456357753338
+      ],
+      [
+        0.707182485396846,
+        0.3330939976157055
+      ],
+      [
+        0.7749892892757714,
+        0.5142374501712037
+      ],
+      [
+        0.7531807434359308,
+        0.24224388420106613
+      ],
+      [
+        0.908985079824389,
+        0.64266136989719
+      ],
+      [
+        1.069841567632788,
+        0.7130299336342131
+      ],
+      [
+        1.9750797703981928,
+        2.002089519256418
+      ],
+      [
+        2.1034455511383583,
+        2.955135596717234
+      ],
+      [
+        0.9639140559140043,
+        1.0488666397551978
+      ]
+    ],
+    "child_observation_noise": 0.08,
+    "coefficient_amplitude": 0.65,
+    "coefficient_lengths": [
+      0.28,
+      0.13,
+      0.21,
+      0.1,
+      0.18
+    ],
+    "data_seed": 20262001,
+    "domain_side_km": 200.0,
+    "family": "smooth",
+    "field_lengths": [
+      0.16,
+      0.08,
+      0.24
+    ],
+    "field_scale": 0.8,
+    "geometry_seed": 20262001,
+    "group_grid": [
+      5,
+      2
+    ],
+    "knot_grid": 97,
+    "mean_trend_scale": 0.3,
+    "missing_fraction": [
+      0.15,
+      0.35,
+      0.25
+    ],
+    "missing_mechanism": "urbanicity_logistic",
+    "missing_urbanicity_slopes": [
+      0.8,
+      1.8,
+      1.1
+    ],
+    "n_regions": 600,
+    "n_subregions": 4800,
+    "neighbors": 6,
+    "noise_sd": 0.35,
+    "nugget_scale": 0.0,
+    "population_total": 19200000.0,
+    "region_observation_noise": 0.06,
+    "scenarios": [
+      "complementary"
+    ],
+    "spatial_adjacency": "rook",
+    "split_seed": 1729
+  },
+  "diagnostics": {
+    "complementary": {
+      "child_available_given_parent_missing": 0.5485753199546304,
+      "missing_by_urbanicity_quartile_low_to_high": [
+        [
+          [
+            0.20666666666666667,
+            0.74,
+            0.48
+          ],
+          [
+            0.14666666666666667,
+            0.43333333333333335,
+            0.25333333333333335
+          ],
+          [
+            0.10666666666666667,
+            0.18,
+            0.21333333333333335
+          ],
+          [
+            0.05333333333333334,
+            0.06666666666666667,
+            0.02
+          ]
+        ],
+        [
+          [
+            0.2808333333333333,
+            0.7658333333333334,
+            0.5025
+          ],
+          [
+            0.15333333333333332,
+            0.42583333333333334,
+            0.2775
+          ],
+          [
+            0.10333333333333333,
+            0.18416666666666667,
+            0.1625
+          ],
+          [
+            0.06,
+            0.0425,
+            0.07583333333333334
+          ]
+        ]
+      ],
+      "missing_fraction_by_level": [
+        [
+          0.12833333333333333,
+          0.355,
+          0.24166666666666667
+        ],
+        [
+          0.149375,
+          0.3545833333333333,
+          0.25458333333333333
+        ]
+      ]
+    }
+  },
+  "family": "smooth",
+  "feature_units": [
+    "deg C",
+    "fraction",
+    "mm/year",
+    "fraction",
+    "ug/m3",
+    "ug/m3",
+    "ug/m3",
+    "relative index",
+    "people/km2",
+    "index [0,1]",
+    "fraction",
+    "index [0,1]"
+  ],
+  "features": [
+    "temperature_c",
+    "relative_humidity",
+    "annual_precipitation_mm",
+    "hot_day_fraction",
+    "pm25_ug_m3",
+    "no2_ug_m3",
+    "ozone_ug_m3",
+    "emission_index",
+    "population_density_km2",
+    "deprivation_index",
+    "older_population_share",
+    "healthcare_access"
+  ],
+  "files": {
+    "complementary.npz": "32b2d9a03856c68b52b03ba6efc62ac21ced6034b17c3b96b3d7c5d7213feff8",
+    "geometry.npz": "6f8cc0eb5f31dfcdbc35eda8196c0e5ae2166bf9f2c458cad6e8b476cd29423f",
+    "missingness.npz": "f95cfea46654aaf9135521948ca8b3f72df86f768a899a77555dc6164b2457f3",
+    "population.npz": "df81f03bf0785fe9b8fe1d579f4d742e3a6c4ffc1b828f2416606f65228e661b",
+    "split.npz": "126517e1a88fb9de16d530959bf89cc0f87cbd138f9a6ef0d0deb6cc804cd5ec",
+    "targets.npz": "ebc72642feba032974221c4cf5bcf0e0348e7438cf2d9b1ad89a2d2b488a0cfe",
+    "truth.npz": "3f7b9be0d8ed99c4bdd0ddb419548eca189ce806801e87f5c5439b7c32733bb4"
+  },
+  "geometry": {
+    "children_count_distribution": {
+      "10": 53,
+      "11": 38,
+      "12": 23,
+      "13": 11,
+      "14": 2,
+      "15": 4,
+      "16": 1,
+      "2": 1,
+      "3": 7,
+      "4": 23,
+      "5": 38,
+      "6": 86,
+      "7": 99,
+      "8": 111,
+      "9": 103
+    },
+    "children_max": 16,
+    "children_mean": 8.0,
+    "children_median": 8.0,
+    "children_min": 2,
+    "max_child_outside_parent_area": 0.0,
+    "n_regions": 600,
+    "n_subregions": 4800,
+    "nonconvex_regions": 600,
+    "nonconvex_subregions": 3342,
+    "partition_checks": [
+      {
+        "gap_area": 0.0,
+        "overlap_area": 2.220446049250313e-16
+      },
+      {
+        "gap_area": 0.0,
+        "overlap_area": 3.3306690738754696e-16
+      }
+    ],
+    "region_area_max": 0.002985814711507409,
+    "region_area_min": 0.0005870129754596093,
+    "region_rook_edges_undirected": 1708,
+    "subregion_rook_edges_undirected": 14158
+  },
+  "local_variation": "Parent-shared and child-specific effects are underlying heterogeneity, not measurement error",
+  "modalities": [
+    "climate",
+    "pollution",
+    "sociodemographic"
+  ],
+  "n_regions": 600,
+  "n_subregions": 4800,
+  "population_interpretation": "Synthetic population mass; settlement gradient plus parent and child log-density heterogeneity; conserved across levels",
+  "schema_version": 4,
+  "seed": 20262001,
+  "target_names": [
+    "Respiratory burden",
+    "Heat-related burden"
+  ],
+  "urbanicity_interpretation": "Standardized log true population density, not a full urban-rural classification"
+}

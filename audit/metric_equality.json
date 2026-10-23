@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "metric_rows": {
+    "results/current/feature_metrics_by_seed.csv": 216,
+    "results/current/inference/test_metrics.csv": 36,
+    "results/figure_probes/feature_metrics_by_seed.csv": 216,
+    "results/figure_probes/health_metrics_by_seed.csv": 36
+  },
+  "total": 504,
+  "encoder_weights_byte_identical": 15
+}

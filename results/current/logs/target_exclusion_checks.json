@@ -1,0 +1,1217 @@
+[
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 0,
+    "partition": "train",
+    "query_count": 360,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 0,
+    "partition": "val",
+    "query_count": 53,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 0,
+    "partition": "test",
+    "query_count": 110,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 1,
+    "partition": "train",
+    "query_count": 271,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 1,
+    "partition": "val",
+    "query_count": 36,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 1,
+    "partition": "test",
+    "query_count": 80,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 2,
+    "partition": "train",
+    "query_count": 320,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 2,
+    "partition": "val",
+    "query_count": 46,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "modality": 2,
+    "partition": "test",
+    "query_count": 89,
+    "regional_target_input_cells": 0,
+    "target_poison_embedding_max_abs": 0.0
+  }
+]

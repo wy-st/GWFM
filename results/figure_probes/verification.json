@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "selected_heads": 90,
+  "candidate_fits": 540,
+  "embedding_width": 16,
+  "encoder_retrained": false,
+  "additional_masks": false,
+  "metric_rows": 252,
+  "source_files_unchanged": 844,
+  "test_scored_after_freezing": true,
+  "selected_heads_replayed": true
+}

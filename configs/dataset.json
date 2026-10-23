@@ -1,0 +1,102 @@
+{
+  "atoms_per_subregion": 3,
+  "attribute_model": "attribute_moran_v2",
+  "attribute_variation": [
+    [
+      0.7821001415920322,
+      0.2245655600316897
+    ],
+    [
+      0.8277670195643546,
+      0.3368949281885717
+    ],
+    [
+      1.160991336300807,
+      0.5152339412251281
+    ],
+    [
+      0.8263015834382595,
+      0.398456357753338
+    ],
+    [
+      0.707182485396846,
+      0.3330939976157055
+    ],
+    [
+      0.7749892892757714,
+      0.5142374501712037
+    ],
+    [
+      0.7531807434359308,
+      0.24224388420106613
+    ],
+    [
+      0.908985079824389,
+      0.64266136989719
+    ],
+    [
+      1.069841567632788,
+      0.7130299336342131
+    ],
+    [
+      1.9750797703981928,
+      2.002089519256418
+    ],
+    [
+      2.1034455511383583,
+      2.955135596717234
+    ],
+    [
+      0.9639140559140043,
+      1.0488666397551978
+    ]
+  ],
+  "child_observation_noise": 0.08,
+  "coefficient_amplitude": 0.65,
+  "coefficient_lengths": [
+    0.28,
+    0.13,
+    0.21,
+    0.1,
+    0.18
+  ],
+  "data_seed": 20262001,
+  "domain_side_km": 200.0,
+  "family": "smooth",
+  "field_lengths": [
+    0.16,
+    0.08,
+    0.24
+  ],
+  "field_scale": 0.8,
+  "geometry_seed": 20262001,
+  "group_grid": [
+    5,
+    2
+  ],
+  "knot_grid": 97,
+  "mean_trend_scale": 0.3,
+  "missing_fraction": [
+    0.15,
+    0.35,
+    0.25
+  ],
+  "missing_mechanism": "urbanicity_logistic",
+  "missing_urbanicity_slopes": [
+    0.8,
+    1.8,
+    1.1
+  ],
+  "n_regions": 600,
+  "n_subregions": 4800,
+  "neighbors": 6,
+  "noise_sd": 0.35,
+  "nugget_scale": 0.0,
+  "population_total": 19200000.0,
+  "region_observation_noise": 0.06,
+  "scenarios": [
+    "complementary"
+  ],
+  "spatial_adjacency": "rook",
+  "split_seed": 1729
+}

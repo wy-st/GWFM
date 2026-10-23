@@ -1,0 +1,84 @@
+[
+  {
+    "target": "Respiratory burden",
+    "validation_mse": 0.5367326603159909,
+    "selected": {
+      "family": "Matern32",
+      "mean": -0.2428316147185124,
+      "scale": 1.1631433329591887,
+      "n_train": 420,
+      "amplitude": 0.7723083207626928,
+      "length_scale": 0.19862295400024554,
+      "noise": 0.3604043541976273,
+      "log_marginal_likelihood": -450.2202756606214,
+      "warnings": []
+    },
+    "candidates": [
+      {
+        "validation_mse": 0.5432577383250821,
+        "family": "RBF",
+        "mean": -0.2428316147185124,
+        "scale": 1.1631433329591887,
+        "n_train": 420,
+        "amplitude": 0.6197280121001281,
+        "length_scale": 0.13075798420387824,
+        "noise": 0.377772178727639,
+        "log_marginal_likelihood": -448.7868582624677,
+        "warnings": []
+      },
+      {
+        "validation_mse": 0.5367326603159909,
+        "family": "Matern32",
+        "mean": -0.2428316147185124,
+        "scale": 1.1631433329591887,
+        "n_train": 420,
+        "amplitude": 0.7723083207626928,
+        "length_scale": 0.19862295400024554,
+        "noise": 0.3604043541976273,
+        "log_marginal_likelihood": -450.2202756606214,
+        "warnings": []
+      }
+    ]
+  },
+  {
+    "target": "Heat-related burden",
+    "validation_mse": 0.5136176361794231,
+    "selected": {
+      "family": "RBF",
+      "mean": 0.11739396865592751,
+      "scale": 0.7335489651633379,
+      "n_train": 420,
+      "amplitude": 0.41541271604244295,
+      "length_scale": 0.09956783916803007,
+      "noise": 0.5574135371967059,
+      "log_marginal_likelihood": -524.618077075421,
+      "warnings": []
+    },
+    "candidates": [
+      {
+        "validation_mse": 0.5136176361794231,
+        "family": "RBF",
+        "mean": 0.11739396865592751,
+        "scale": 0.7335489651633379,
+        "n_train": 420,
+        "amplitude": 0.41541271604244295,
+        "length_scale": 0.09956783916803007,
+        "noise": 0.5574135371967059,
+        "log_marginal_likelihood": -524.618077075421,
+        "warnings": []
+      },
+      {
+        "validation_mse": 0.5150807466149804,
+        "family": "Matern32",
+        "mean": 0.11739396865592751,
+        "scale": 0.7335489651633379,
+        "n_train": 420,
+        "amplitude": 0.4726267549558366,
+        "length_scale": 0.11962065328304256,
+        "noise": 0.5220811458894121,
+        "log_marginal_likelihood": -524.5244317477645,
+        "warnings": []
+      }
+    ]
+  }
+]

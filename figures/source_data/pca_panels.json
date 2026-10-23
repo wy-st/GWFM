@@ -1,0 +1,56 @@
+[
+  {
+    "quantity": "hk",
+    "pc": 1,
+    "explained_variance": 0.288875314097603,
+    "moran_i": 0.6631177722284053,
+    "vmin": -18.5995735800164,
+    "vmax": 18.5995735800164,
+    "region_count": 600
+  },
+  {
+    "quantity": "hk",
+    "pc": 2,
+    "explained_variance": 0.199346504812776,
+    "moran_i": 0.6676648442767124,
+    "vmin": -19.1119740837442,
+    "vmax": 19.1119740837442,
+    "region_count": 600
+  },
+  {
+    "quantity": "hk",
+    "pc": 3,
+    "explained_variance": 0.13312956753213756,
+    "moran_i": 0.708319574699596,
+    "vmin": -13.788201673974372,
+    "vmax": 13.788201673974372,
+    "region_count": 600
+  },
+  {
+    "quantity": "beta",
+    "pc": 1,
+    "explained_variance": 0.8164941092922627,
+    "moran_i": 0.4140692698174825,
+    "vmin": -5.370999918996082,
+    "vmax": 5.370999918996082,
+    "region_count": 600
+  },
+  {
+    "quantity": "beta",
+    "pc": 2,
+    "explained_variance": 0.11043759959593179,
+    "moran_i": 0.08435477160906456,
+    "vmin": -2.5603665421777917,
+    "vmax": 2.5603665421777917,
+    "region_count": 600
+  },
+  {
+    "quantity": "beta",
+    "pc": 3,
+    "explained_variance": 0.06185617767435002,
+    "moran_i": 0.036528125205666194,
+    "vmin": -1.5792547290316425,
+    "vmax": 1.5792547290316425,
+    "region_count": 600
+  }
+]

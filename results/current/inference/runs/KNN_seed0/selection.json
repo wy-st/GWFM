@@ -1,0 +1,70 @@
+[
+  {
+    "target": "Respiratory burden",
+    "selected": {
+      "neighbors": 8
+    },
+    "validation_losses": [
+      0.8046830336363108,
+      0.4875694077537629,
+      0.48267171208394216,
+      0.45000033104077,
+      0.4683606965026766,
+      0.4965502655606591
+    ],
+    "candidates": [
+      {
+        "neighbors": 1
+      },
+      {
+        "neighbors": 3
+      },
+      {
+        "neighbors": 5
+      },
+      {
+        "neighbors": 8
+      },
+      {
+        "neighbors": 16
+      },
+      {
+        "neighbors": 32
+      }
+    ]
+  },
+  {
+    "target": "Heat-related burden",
+    "selected": {
+      "neighbors": 8
+    },
+    "validation_losses": [
+      1.6964638714640585,
+      1.2856811905470527,
+      1.0988375457152313,
+      1.0275124767916002,
+      1.0312046772794121,
+      1.081491711516001
+    ],
+    "candidates": [
+      {
+        "neighbors": 1
+      },
+      {
+        "neighbors": 3
+      },
+      {
+        "neighbors": 5
+      },
+      {
+        "neighbors": 8
+      },
+      {
+        "neighbors": 16
+      },
+      {
+        "neighbors": 32
+      }
+    ]
+  }
+]

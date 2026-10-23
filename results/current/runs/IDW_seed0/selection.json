@@ -1,0 +1,86 @@
+{
+  "temperature_c": {
+    "config": {
+      "neighbors": 16,
+      "power": 2.0
+    },
+    "validation_mse": 5.798597714999577
+  },
+  "relative_humidity": {
+    "config": {
+      "neighbors": 32,
+      "power": 1.0
+    },
+    "validation_mse": 0.0050691062065151464
+  },
+  "annual_precipitation_mm": {
+    "config": {
+      "neighbors": 16,
+      "power": 1.0
+    },
+    "validation_mse": 17699.818147871374
+  },
+  "hot_day_fraction": {
+    "config": {
+      "neighbors": 16,
+      "power": 2.0
+    },
+    "validation_mse": 0.00033208293699304845
+  },
+  "pm25_ug_m3": {
+    "config": {
+      "neighbors": 32,
+      "power": 2.0
+    },
+    "validation_mse": 20.378736442646332
+  },
+  "no2_ug_m3": {
+    "config": {
+      "neighbors": 16,
+      "power": 1.0
+    },
+    "validation_mse": 51.148445348391064
+  },
+  "ozone_ug_m3": {
+    "config": {
+      "neighbors": 32,
+      "power": 1.0
+    },
+    "validation_mse": 13.355401433663783
+  },
+  "emission_index": {
+    "config": {
+      "neighbors": 8,
+      "power": 1.0
+    },
+    "validation_mse": 0.5645812863616608
+  },
+  "population_density_km2": {
+    "config": {
+      "neighbors": 32,
+      "power": 1.0
+    },
+    "validation_mse": 33111.38610261909
+  },
+  "deprivation_index": {
+    "config": {
+      "neighbors": 32,
+      "power": 1.0
+    },
+    "validation_mse": 0.006665548885329204
+  },
+  "older_population_share": {
+    "config": {
+      "neighbors": 32,
+      "power": 2.0
+    },
+    "validation_mse": 0.0004201464695934765
+  },
+  "healthcare_access": {
+    "config": {
+      "neighbors": 32,
+      "power": 1.0
+    },
+    "validation_mse": 0.012769577785013307
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "best_epoch": 278,
+  "validation_huber": 0.2320096641778946,
+  "seconds": 100.0532109170017,
+  "parameters": 102041,
+  "training_masks_sha256": "675db1a4b2999c8191812c2bd0ca30f927269240f68b7dbd701d5e0477d01ca9",
+  "checkpoint_sha256": "2511aee6e887274d3997d0538eff36383d7bdc9c3635adea2da2500e27dd97ca",
+  "restore_exact": true
+}

@@ -1,0 +1,24 @@
+{
+  "Heat-related burden": {
+    "vmin": 0.0,
+    "vmax": 1.8716064197085884,
+    "shared_methods": [
+      "KNN",
+      "IDW",
+      "GPR",
+      "PDFM",
+      "GWFM"
+    ]
+  },
+  "temperature_c": {
+    "vmin": 0.0,
+    "vmax": 8.022529048708195,
+    "shared_methods": [
+      "KNN",
+      "IDW",
+      "GPR",
+      "PDFM",
+      "GWFM"
+    ]
+  }
+}

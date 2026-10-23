@@ -1,0 +1,317 @@
+[
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 11,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 23,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "GWFM",
+    "seed": 37,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 11,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 23,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "PDFM",
+    "seed": 37,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 11,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 23,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_weighting",
+    "seed": 37,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 11,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 23,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_modality",
+    "seed": 37,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 11,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 23,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "partition": 0,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "partition": 1,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  },
+  {
+    "model": "no_prototype",
+    "seed": 37,
+    "partition": 2,
+    "artificial_exclusions": 0,
+    "max_abs_difference": 0.0
+  }
+]

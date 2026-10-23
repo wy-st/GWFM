@@ -1,0 +1,23 @@
+{
+  "method": "pdfm",
+  "pdfm_neighborhood": "scale",
+  "pdfm_aggregation": "mean",
+  "spatial_neighbors": 8,
+  "hidden": 64,
+  "block_dim": 16,
+  "decoder_layers": 1,
+  "graph_rule": "distance",
+  "distance_bandwidths": [
+    14.402076958647303,
+    4.3206784710364285
+  ],
+  "seed": 11,
+  "epochs": 300,
+  "lr": 0.001,
+  "mask_strategy": "mixed",
+  "mask_rate": 0.3,
+  "training_objective": "single_view_masked_reconstruction",
+  "data": "data",
+  "scenario": "complementary",
+  "no_child_spatial": false
+}

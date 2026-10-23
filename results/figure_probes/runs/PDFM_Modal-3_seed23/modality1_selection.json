@@ -1,0 +1,86 @@
+{
+  "selected": {
+    "best_epoch": 151,
+    "validation_link_mse": 0.4846996068954468,
+    "epochs_run": 191,
+    "hidden": 64,
+    "weight_decay": 0.01,
+    "patience": 40,
+    "min_delta": 1e-06,
+    "checkpoint": "modality1_h64_wd0.01.pt"
+  },
+  "candidates": [
+    {
+      "best_epoch": 31,
+      "validation_link_mse": 0.6082375049591064,
+      "epochs_run": 71,
+      "hidden": 32,
+      "weight_decay": 0.0001,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "modality1_h32_wd0.0001.pt"
+    },
+    {
+      "best_epoch": 31,
+      "validation_link_mse": 0.6081416606903076,
+      "epochs_run": 71,
+      "hidden": 32,
+      "weight_decay": 0.01,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "modality1_h32_wd0.01.pt"
+    },
+    {
+      "best_epoch": 151,
+      "validation_link_mse": 0.48491525650024414,
+      "epochs_run": 191,
+      "hidden": 64,
+      "weight_decay": 0.0001,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "modality1_h64_wd0.0001.pt"
+    },
+    {
+      "best_epoch": 151,
+      "validation_link_mse": 0.4846996068954468,
+      "epochs_run": 191,
+      "hidden": 64,
+      "weight_decay": 0.01,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "modality1_h64_wd0.01.pt"
+    },
+    {
+      "best_epoch": 107,
+      "validation_link_mse": 0.5027472972869873,
+      "epochs_run": 147,
+      "hidden": 128,
+      "weight_decay": 0.0001,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "modality1_h128_wd0.0001.pt"
+    },
+    {
+      "best_epoch": 107,
+      "validation_link_mse": 0.5025449395179749,
+      "epochs_run": 147,
+      "hidden": 128,
+      "weight_decay": 0.01,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "modality1_h128_wd0.01.pt"
+    }
+  ],
+  "seconds": 0.3578879999986384,
+  "train_events": 271,
+  "validation_nodes": 36,
+  "input_dim": 16,
+  "output_dim": 4,
+  "checkpoint_sha256": "c772d8b78a5dda56e66ac6ad16ad932e22e67612045675dab15d56c35e039ede",
+  "input_sha256": {
+    "train_x": "cfcf607b1a9748cc29b5fa9bd2336cdf592a27b8fb122248e9314dabd4e0d32e",
+    "train_y": "647f0bc6053d5c9b952c2a90d6006284924c4761599e9faf6852f19bb6ecaa7c",
+    "val_x": "0d5e40c4df7833329d1423c996872d5d5aecd7f49700a519f8543c0e358ad7cc",
+    "val_y": "bd1727ed997b7d975b0997fb04addf3a7ed4a82cf0568a6bc9c5390165eae885"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "selected": {
+    "best_epoch": 51,
+    "validation_link_mse": 0.11856497079133987,
+    "epochs_run": 91,
+    "hidden": 64,
+    "weight_decay": 0.01,
+    "patience": 40,
+    "min_delta": 1e-06,
+    "checkpoint": "level0_modality2_h64_wd0.01.pt"
+  },
+  "candidates": [
+    {
+      "best_epoch": 51,
+      "validation_link_mse": 0.12561415135860443,
+      "epochs_run": 91,
+      "hidden": 32,
+      "weight_decay": 0.0001,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "level0_modality2_h32_wd0.0001.pt"
+    },
+    {
+      "best_epoch": 51,
+      "validation_link_mse": 0.12556593120098114,
+      "epochs_run": 91,
+      "hidden": 32,
+      "weight_decay": 0.01,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "level0_modality2_h32_wd0.01.pt"
+    },
+    {
+      "best_epoch": 51,
+      "validation_link_mse": 0.11859620362520218,
+      "epochs_run": 91,
+      "hidden": 64,
+      "weight_decay": 0.0001,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "level0_modality2_h64_wd0.0001.pt"
+    },
+    {
+      "best_epoch": 51,
+      "validation_link_mse": 0.11856497079133987,
+      "epochs_run": 91,
+      "hidden": 64,
+      "weight_decay": 0.01,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "level0_modality2_h64_wd0.01.pt"
+    },
+    {
+      "best_epoch": 38,
+      "validation_link_mse": 0.1275905817747116,
+      "epochs_run": 78,
+      "hidden": 128,
+      "weight_decay": 0.0001,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "level0_modality2_h128_wd0.0001.pt"
+    },
+    {
+      "best_epoch": 38,
+      "validation_link_mse": 0.1275569498538971,
+      "epochs_run": 78,
+      "hidden": 128,
+      "weight_decay": 0.01,
+      "patience": 40,
+      "min_delta": 1e-06,
+      "checkpoint": "level0_modality2_h128_wd0.01.pt"
+    }
+  ],
+  "seconds": 0.24883604199567344,
+  "train_events": 320,
+  "validation_nodes": 46,
+  "input_dim": 48,
+  "output_dim": 4,
+  "checkpoint_sha256": "9cba6bd1fa930f1fa36d588926f05a28d74bd0e08b1a14d95ba6116b5e4a6ec9",
+  "input_sha256": {
+    "train_x": "2b988e2a03b6fa5d2051b00d83aad7f836b9b13a4367dcbd638e0848fb210184",
+    "train_y": "539e068b8348f99296d9daef4824dae50dfcfbb135fb952f3e0496880a00f38a",
+    "val_x": "71d41f867b139979a4008a9af629c270196c1f9da4b98ffddc8ba1bfc44e2c17",
+    "val_y": "89be3b57248a6fea1f652b413d04664fcc95380d84a2dc945c909797de0d4cd9"
+  }
+}

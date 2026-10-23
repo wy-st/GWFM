@@ -1,0 +1,12 @@
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.2
+torch==2.6.0
+torch-geometric==2.6.1
+scikit-learn==1.6.1
+shapely==2.1.2
+matplotlib==3.9.2
+joblib==1.4.2
+threadpoolctl==3.5.0
+PyMuPDF==1.28.2
+Pillow==10.4.0

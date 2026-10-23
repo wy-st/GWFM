@@ -1,0 +1,148 @@
+{
+  "temperature_c": {
+    "validation_mse": 5.52466340572211,
+    "family": "RBF",
+    "mean": 16.565339080489647,
+    "scale": 3.5953866008823323,
+    "n_train": 360,
+    "amplitude": 0.9620371415267149,
+    "length_scale": 0.20873811446400592,
+    "noise": 0.4536444383267103,
+    "log_marginal_likelihood": -404.95890097494004,
+    "warnings": []
+  },
+  "relative_humidity": {
+    "validation_mse": 0.005162501377968591,
+    "family": "RBF",
+    "mean": 0.5806147406719449,
+    "scale": 0.11298483509664617,
+    "n_train": 360,
+    "amplitude": 0.6669234631917028,
+    "length_scale": 0.2208779668084893,
+    "noise": 0.4560090077871311,
+    "log_marginal_likelihood": -399.40671592620004,
+    "warnings": []
+  },
+  "annual_precipitation_mm": {
+    "validation_mse": 17409.391027283775,
+    "family": "Matern32",
+    "mean": 693.8957102391661,
+    "scale": 164.86735646113675,
+    "n_train": 360,
+    "amplitude": 0.8067295036748993,
+    "length_scale": 0.34875081613974274,
+    "noise": 0.463339626379022,
+    "log_marginal_likelihood": -407.27335947588375,
+    "warnings": []
+  },
+  "hot_day_fraction": {
+    "validation_mse": 0.0003294426691220189,
+    "family": "Matern32",
+    "mean": 0.04528872014859328,
+    "scale": 0.02681535858091413,
+    "n_train": 360,
+    "amplitude": 0.6351232020082961,
+    "length_scale": 0.2304379459403576,
+    "noise": 0.5662353227937242,
+    "log_marginal_likelihood": -448.45615431188025,
+    "warnings": []
+  },
+  "pm25_ug_m3": {
+    "validation_mse": 19.65278004257248,
+    "family": "RBF",
+    "mean": 13.107816352484267,
+    "scale": 5.962529017880184,
+    "n_train": 271,
+    "amplitude": 0.5343741640496085,
+    "length_scale": 0.08648123176848589,
+    "noise": 0.4299704617527918,
+    "log_marginal_likelihood": -327.1149533619008,
+    "warnings": []
+  },
+  "no2_ug_m3": {
+    "validation_mse": 51.46463118994078,
+    "family": "RBF",
+    "mean": 17.524315919960515,
+    "scale": 8.885394394384088,
+    "n_train": 271,
+    "amplitude": 0.39658949565869167,
+    "length_scale": 0.09880429705493217,
+    "noise": 0.5927939337996667,
+    "log_marginal_likelihood": -350.26282389874706,
+    "warnings": []
+  },
+  "ozone_ug_m3": {
+    "validation_mse": 13.984019167159964,
+    "family": "RBF",
+    "mean": 27.503483076254724,
+    "scale": 8.304415197101408,
+    "n_train": 271,
+    "amplitude": 0.855730291043311,
+    "length_scale": 0.1313039964947358,
+    "noise": 0.3600870581547139,
+    "log_marginal_likelihood": -298.8642487325038,
+    "warnings": []
+  },
+  "emission_index": {
+    "validation_mse": 0.584195124675255,
+    "family": "Matern32",
+    "mean": 1.2467544027251032,
+    "scale": 0.6930810920056335,
+    "n_train": 271,
+    "amplitude": 0.5350134229932578,
+    "length_scale": 0.1137175807178525,
+    "noise": 0.44929997356503765,
+    "log_marginal_likelihood": -333.9781412475314,
+    "warnings": []
+  },
+  "population_density_km2": {
+    "validation_mse": 30209.08203817136,
+    "family": "RBF",
+    "mean": 538.801817837297,
+    "scale": 308.53742855575,
+    "n_train": 320,
+    "amplitude": 0.40756524706506736,
+    "length_scale": 0.19509583389704166,
+    "noise": 0.62414613600735,
+    "log_marginal_likelihood": -401.21111977768203,
+    "warnings": []
+  },
+  "deprivation_index": {
+    "validation_mse": 0.006883617615735617,
+    "family": "RBF",
+    "mean": 0.40279892231742104,
+    "scale": 0.09475754663628182,
+    "n_train": 320,
+    "amplitude": 0.17085940059932406,
+    "length_scale": 0.24214371014195318,
+    "noise": 0.8474010000427931,
+    "log_marginal_likelihood": -438.120226314699,
+    "warnings": []
+  },
+  "older_population_share": {
+    "validation_mse": 0.0003884084529423717,
+    "family": "RBF",
+    "mean": 0.17714049378785393,
+    "scale": 0.021945263248693055,
+    "n_train": 320,
+    "amplitude": 0.1703730987616227,
+    "length_scale": 0.005000000000000002,
+    "noise": 0.8296269095283622,
+    "log_marginal_likelihood": -454.0603335152641,
+    "warnings": [
+      "The optimal value found for dimension 0 of parameter k1__k2__length_scale is close to the specified lower bound 0.005. Decreasing the bound and calling fit again may find a better value."
+    ]
+  },
+  "healthcare_access": {
+    "validation_mse": 0.012371039114900999,
+    "family": "RBF",
+    "mean": 0.6257903063656974,
+    "scale": 0.11059934078129711,
+    "n_train": 320,
+    "amplitude": 0.27251132058236993,
+    "length_scale": 0.16823685088694967,
+    "noise": 0.7198446144836089,
+    "log_marginal_likelihood": -421.15012618432775,
+    "warnings": []
+  }
+}

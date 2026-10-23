@@ -1,0 +1,36 @@
+{
+  "config": {
+    "method": "dual_self_proto",
+    "visibility_strategy": "visible_relations",
+    "branch_beta_strategy": "dual_self_proto",
+    "data": "data",
+    "scenario": "complementary",
+    "hidden": 64,
+    "block_dim": 16,
+    "decoder_layers": 1,
+    "no_child_spatial": false,
+    "graph_rule": "distance",
+    "distance_bandwidths": [
+      14.402076958647303,
+      4.3206784710364285
+    ],
+    "spatial_neighbors": 8,
+    "seed": 37,
+    "epochs": 300,
+    "lr": 0.001,
+    "mask_strategy": "mixed",
+    "mask_rate": 0.3,
+    "lambda_proto": 0.0,
+    "lambda_variance": 0.0,
+    "lambda_cross": 0.0,
+    "modality_arch": "specific_shared",
+    "post_sage_gate": false,
+    "spatial_sum": true,
+    "ablation": "no_prototype"
+  },
+  "input_sha256": {
+    "complementary.npz": "32b2d9a03856c68b52b03ba6efc62ac21ced6034b17c3b96b3d7c5d7213feff8",
+    "geometry.npz": "6f8cc0eb5f31dfcdbc35eda8196c0e5ae2166bf9f2c458cad6e8b476cd29423f",
+    "split.npz": "126517e1a88fb9de16d530959bf89cc0f87cbd138f9a6ef0d0deb6cc804cd5ec"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "selected_heads_checked": 75,
+  "metric_cells_checked": 252,
+  "interpolation_test_counts": [
+    110,
+    80,
+    89
+  ],
+  "inference_test_regions": 120,
+  "target_exclusion_checks": 135,
+  "natural_embedding_checks": 45
+}

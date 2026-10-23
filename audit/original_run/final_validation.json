@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "full_fresh_run_seconds": 1495.0543663330027,
+  "encoders": 15,
+  "epochs_per_encoder": 300,
+  "selected_heads": 165,
+  "candidate_fits": 990,
+  "r2_values_compared": 504,
+  "maximum_r2_difference_from_previous_corrected_run": 0,
+  "encoder_and_embedding_maximum_difference": 0,
+  "unit_tests_passed": 23,
+  "smoke_test_passed": true,
+  "editable_equations_preserved": 27,
+  "word_pages_visually_reviewed": 10,
+  "publication_figures_identical": 3,
+  "model_and_training_code_changed_this_turn": false,
+  "document_layout": "Removed forced blank remainder before data-generation section; kept AI disclosure paragraph together.",
+  "relocated_pipeline_verification": "passed",
+  "interpolation_ratio_documentation": "Updated and checked against saved cohort counts; 10 pages reviewed; training and results unchanged."
+}

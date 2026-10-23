@@ -1,0 +1,1 @@
+"""Deterministic hierarchical data generation."""

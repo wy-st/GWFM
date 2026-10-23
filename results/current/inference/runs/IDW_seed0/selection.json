@@ -1,0 +1,114 @@
+[
+  {
+    "target": "Respiratory burden",
+    "selected": {
+      "neighbors": 32,
+      "power": 2.0
+    },
+    "validation_losses": [
+      0.4332148759582309,
+      0.42888060673677947,
+      0.43773814023019497,
+      0.4352462578379396,
+      0.4200587700541091,
+      0.42735158524764455,
+      0.4477501289493058,
+      0.41684892516464495,
+      0.421664815101947
+    ],
+    "candidates": [
+      {
+        "neighbors": 8,
+        "power": 1.0
+      },
+      {
+        "neighbors": 8,
+        "power": 2.0
+      },
+      {
+        "neighbors": 8,
+        "power": 3.0
+      },
+      {
+        "neighbors": 16,
+        "power": 1.0
+      },
+      {
+        "neighbors": 16,
+        "power": 2.0
+      },
+      {
+        "neighbors": 16,
+        "power": 3.0
+      },
+      {
+        "neighbors": 32,
+        "power": 1.0
+      },
+      {
+        "neighbors": 32,
+        "power": 2.0
+      },
+      {
+        "neighbors": 32,
+        "power": 3.0
+      }
+    ]
+  },
+  {
+    "target": "Heat-related burden",
+    "selected": {
+      "neighbors": 16,
+      "power": 1.0
+    },
+    "validation_losses": [
+      1.040259291802787,
+      1.0702914253985738,
+      1.1116164980871197,
+      1.006627875674317,
+      1.019810118473799,
+      1.068376687491771,
+      1.0338799485927546,
+      1.016149497170091,
+      1.0551867337731664
+    ],
+    "candidates": [
+      {
+        "neighbors": 8,
+        "power": 1.0
+      },
+      {
+        "neighbors": 8,
+        "power": 2.0
+      },
+      {
+        "neighbors": 8,
+        "power": 3.0
+      },
+      {
+        "neighbors": 16,
+        "power": 1.0
+      },
+      {
+        "neighbors": 16,
+        "power": 2.0
+      },
+      {
+        "neighbors": 16,
+        "power": 3.0
+      },
+      {
+        "neighbors": 32,
+        "power": 1.0
+      },
+      {
+        "neighbors": 32,
+        "power": 2.0
+      },
+      {
+        "neighbors": 32,
+        "power": 3.0
+      }
+    ]
+  }
+]

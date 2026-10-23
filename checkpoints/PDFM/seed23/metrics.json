@@ -1,0 +1,11 @@
+{
+  "best_epoch": 277,
+  "validation_huber": 0.28808753937482834,
+  "parameters": 16764,
+  "seconds": 13.634492834011326,
+  "checkpoint_sha256": "dd7eeedd7d9bd3cab01c21ff14591e153902319debd46b9879ce8fbec4014ce0",
+  "training": "PDFM single-view SSL masked reconstruction; GWFM mixed sampler",
+  "training_masks_sha256": "74edd7428a9f853df4ab27a03875be3b43f211bd190b707c5a2433a9689a774d",
+  "training_mask_views_per_epoch": 1,
+  "validation_mask_sha256": "c8b19341aed5c6024f5263b8ac925ea088deae5e7c9310dd5300d5de1d4684bb"
+}

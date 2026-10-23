@@ -1,0 +1,30 @@
+{
+  "features": [
+    "temperature_c",
+    "relative_humidity",
+    "annual_precipitation_mm",
+    "hot_day_fraction",
+    "pm25_ug_m3",
+    "no2_ug_m3",
+    "ozone_ug_m3",
+    "emission_index",
+    "population_density_km2",
+    "deprivation_index",
+    "older_population_share",
+    "healthcare_access"
+  ],
+  "units": [
+    "deg C",
+    "fraction",
+    "mm/year",
+    "fraction",
+    "ug/m3",
+    "ug/m3",
+    "ug/m3",
+    "relative index",
+    "people/km2",
+    "index [0,1]",
+    "fraction",
+    "index [0,1]"
+  ]
+}

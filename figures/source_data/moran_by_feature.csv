@@ -1,0 +1,13 @@
+feature,modality,moran_i
+temperature_c,Climate,0.5637337214816257
+relative_humidity,Climate,0.5644610290270602
+annual_precipitation_mm,Climate,0.45992755104131483
+hot_day_fraction,Climate,0.43268743092302997
+pm25_ug_m3,Pollution,0.5149243025049567
+no2_ug_m3,Pollution,0.4010909131333363
+ozone_ug_m3,Pollution,0.6557086521291967
+emission_index,Pollution,0.4508282868772981
+population_density_km2,Sociodemographic,0.4094685434268565
+deprivation_index,Sociodemographic,0.1676064167216148
+older_population_share,Sociodemographic,0.12403120659356058
+healthcare_access,Sociodemographic,0.23781949700309649

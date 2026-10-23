@@ -1,0 +1,28 @@
+{
+  "method": "dual_self_proto",
+  "visibility_strategy": "visible_relations",
+  "branch_beta_strategy": "dual_self_proto",
+  "data": "data",
+  "scenario": "complementary",
+  "hidden": 64,
+  "block_dim": 16,
+  "decoder_layers": 1,
+  "no_child_spatial": false,
+  "graph_rule": "distance",
+  "distance_bandwidths": [
+    14.402076958647303,
+    4.3206784710364285
+  ],
+  "spatial_neighbors": 8,
+  "seed": 11,
+  "epochs": 300,
+  "lr": 0.001,
+  "mask_strategy": "mixed",
+  "mask_rate": 0.3,
+  "lambda_proto": 0.05,
+  "lambda_variance": 0.05,
+  "lambda_cross": 0.0,
+  "modality_arch": "specific_shared",
+  "post_sage_gate": false,
+  "spatial_sum": true
+}
