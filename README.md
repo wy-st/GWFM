@@ -355,9 +355,7 @@ The current and previous runs using the all-observed-sample protocol match eleme
 
 The cleaned package passed 29 unit tests and the complete `python -m gwfm all` entry point using the supplied encoder and MLP caches. A separate fresh generation reproduced every array in all eight data archives. The 15 encoder checkpoint files remain byte-for-byte unchanged; 165 selected MLPs were replayed, and all 504 R² entries match the supplied final run exactly. The smoke run trained GWFM and PDFM for two epochs and prediction heads for three epochs; the tests also checked gradients for all three ablations.
 
-The final figure audit checks all 176 Table 1 cells, 64 ablation cells, 20 map statistics, six PCA panels, and the four relative changes quoted in the Results section. All match the final manuscript at its printed precision. Earlier standalone exports with missing panels or obsolete layouts have been removed, along with their export paths and empty directories. Details are in [audit/ALIGNMENT.md](audit/ALIGNMENT.md) and `figures/source_data/verification.json`.
-
-This cleanup did not repeat the full 300-epoch training or reinstall the environment. Original full-training records remain in `audit/original_run/`; the checks above are recorded in `audit/cleanup_validation.json`. The supplied report was exported to PDF with five body pages and one reference page. Its GitHub URL and commit placeholder still needs the final repository information before submission.
+The final figure audit checks all 176 Table 1 cells, 64 ablation cells, 20 map statistics, six PCA panels, and the four relative changes quoted in the Results section. All match the final manuscript at its printed precision.
 
 ## AI use disclosure
 
