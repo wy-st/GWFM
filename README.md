@@ -157,7 +157,7 @@ The Gaussian process kernel is a constant kernel × spatial kernel + white-noise
 
 ### Inference and interpolation
 
-Health-burden inference is the region-level interpolation task required by the assignment; attribute interpolation is an additional evaluation.
+Health-burden inference is the region-level interpolation task required by the assignment; observed attribute interpolation is an additional evaluation.
 
 For neural methods (GWFM, PDFM, and the ablations), health-burden inference uses embeddings of naturally observed inputs. For interpolation, the target modality is excluded from every regional node within each split before encoding. Other modalities and naturally visible subregional attributes remain available; no additional random downstream views are introduced.
 
