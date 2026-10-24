@@ -157,11 +157,20 @@ The Gaussian process kernel is a constant kernel × spatial kernel + white-noise
 
 ### Inference and interpolation
 
+Health-burden inference is the region-level interpolation task required by the assignment; attribute interpolation is an additional evaluation.
+
 For neural methods (GWFM, PDFM, and the ablations), health-burden inference uses embeddings of naturally observed inputs. For interpolation, the target modality is excluded from every regional node within each split before encoding. Other modalities and naturally visible subregional attributes remain available; no additional random downstream views are introduced.
 
 Interpolation includes every region with an observed target modality in each split. Training/validation/test counts are 360/53/110 for climate, 271/36/80 for pollution, and 320/46/89 for sociodemographic attributes. Naturally missing targets are excluded from supervision and scoring. For health inference task, the 600 regions follow a fixed training/validation/test split of 420/60/120 regions, respectively.
 
 Spatial methods (KNN, IDW, and GPR) use training-region labels for health-burden inference and observed attributes of the corresponding training regions for interpolation. Hyperparameters are selected on the validation set. All methods use the same target samples. Modal-1/2/3 denote 16-dimensional blocks of the same encoder; Multi-Modal denotes the full 48-dimensional embedding.
+
+### Numerical constraints
+
+- Encoder inputs and SSL targets use training-set standardization and clipping to [-5,5]; missing inputs stay zero.
+- GWFM uses `beta = 2 * sigmoid(...)`, so beta lies in (0,2).
+- GWFM bandwidth multipliers are limited to [0.25,4] times the initial bandwidths; distance-exponent magnitudes are capped at 30.
+- Attribute predictions respect physical bounds: positive-only attributes ≥1e-12; proportions and bounded indices in [1e-12,1-1e-12]. Health scores are not clipped.
 
 ### Evaluation
 

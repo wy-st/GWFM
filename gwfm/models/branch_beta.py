@@ -1,4 +1,4 @@
-"""Independent attribute (k0) and geographic-weight (beta) branches."""
+"""Independent attribute (E_0, stored as k0) and geographic-weight (beta) branches."""
 
 from copy import deepcopy
 
