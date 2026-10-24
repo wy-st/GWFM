@@ -168,7 +168,6 @@ Spatial methods (KNN, IDW, and GPR) use training-region labels for health-burden
 ### Numerical constraints
 
 - Encoder inputs and SSL targets use training-set standardization and clipping to [-5,5]; missing inputs stay zero.
-- GWFM uses `beta = 2 * sigmoid(...)`, so beta lies in (0,2).
 - GWFM bandwidth multipliers are limited to [0.25,4] times the initial bandwidths; distance-exponent magnitudes are capped at 30.
 - Attribute predictions respect physical bounds: positive-only attributes ≥1e-12; proportions and bounded indices in [1e-12,1-1e-12]. Health scores are not clipped.
 
